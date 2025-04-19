@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Lisa!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Animation helpers -->
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- full‑screen confetti canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- floating balloons container -->
+  <div id="balloons-container"></div>
+
+  <div id="card">
+    <h1 id="greeting"></h1>
+
+    <!-- Swap this for a cute photo of you two -->
+    <img id="photo" src="assets/lisa_photo.png" alt="Lisa and Lukas">
+
+    <div id="message-box">
+      <p id="message"></p>
+      <button id="next-btn">Next memory ♥</button>
+    </div>
+
+    <!-- Your favourite birthday track (put the file in /assets) -->
+    <audio id="song" src="assets/birthday_song.mp3"></audio>
+  </div>
+</body>
+</html>
